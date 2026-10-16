@@ -1,0 +1,76 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+*.sam
+
+# Large alignment files
+*.bam
+*.bai
+*.cram
+*.crai
+
+# Variant files and indexes
+*.vcf
+*.vcf.gz
+*.g.vcf
+*.g.vcf.gz
+*.tbi
+*.csi
+
+# Reference genome and alignment indexes
+*.fa
+*.fasta
+*.fna
+*.dict
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+*.fai
+
+# Recalibration and large intermediate files
+*.recal
+*.recal.table
+*.tmp
+
+# R temporary and workspace files
+.RData
+.Rhistory
+.Rproj.user/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Exclude all compressed data files
+*.gz
+
+# Exclude large reference and intermediate data
+08_reference/
+09_alignment/
+15_bqsr_applied/
+17_variant_calling/
+19_variant_filtering/
+20_final_variants/
+fastq/
+
+# Exclude large project data folders
+11_markduplicates/
+13_known_sites/
+14_bqsr/
+SRR098401/
+
+# Exclude trimmed sequencing reads
+06_trimmed/
+
+# Exclude compressed FastQC archives
+*.zip
+
