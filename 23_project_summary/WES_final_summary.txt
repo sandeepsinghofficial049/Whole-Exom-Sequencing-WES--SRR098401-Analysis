@@ -1,0 +1,44 @@
+WES ANALYSIS SUMMARY
+====================
+
+Sample ID: SRR098401
+Reference Genome: GRCh38
+Analysis Type: Whole Exome Sequencing Variant Calling
+
+Completed Pipeline Steps:
+1. FASTQ preparation
+2. Raw-read quality control
+3. Read trimming using fastp
+4. Post-trimming quality control
+5. Reference genome preparation
+6. BWA alignment
+7. BAM sorting and indexing
+8. Alignment quality assessment
+9. Duplicate marking
+10. Base Quality Score Recalibration
+11. Recalibrated BAM quality control
+12. Variant calling using GATK HaplotypeCaller
+13. Genotyping using GenotypeGVCFs
+14. SNP and INDEL extraction
+15. SNP hard filtering
+16. INDEL hard filtering
+17. Extraction of PASS variants
+18. Final variant QC statistics
+
+Final PASS SNPs: 1309467
+Final PASS INDELs: 155214
+Total PASS variant records: 1464681
+
+Final SNP VCF:
+20_final_variants/SRR098401_PASS_snps.vcf.gz
+
+Final INDEL VCF:
+20_final_variants/SRR098401_PASS_indels.vcf.gz
+
+SNP Statistics:
+21_final_qc/SRR098401_PASS_snps_stats.txt
+
+INDEL Statistics:
+21_final_qc/SRR098401_PASS_indels_stats.txt
+
+Functional annotation has not yet been performed.
